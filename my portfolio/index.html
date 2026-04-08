@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<canvas id="particles"></canvas>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-counter" id="loaderNum">0</div>
+  <div class="loader-label">Loading portfolio</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">Ebenazer.K / Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="hero-left">
+    <p class="hero-eyebrow">Data Analyst &amp; BI Developer</p>
+    <h1 class="hero-name">Data that<br><em>drives</em><br>decisions.</h1>
+    <p class="hero-desc">I work at the intersection of data and decision-making — turning complex information into clear, actionable insights that move businesses forward.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary"><span>View Projects</span></a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="stat-block" id="s1">
+      <div class="stat-num">360°</div>
+      <div class="stat-desc">Full data lifecycle — from raw ingestion to polished executive dashboard</div>
+      <div class="stat-bar"><div class="stat-bar-fill" data-w="100"></div></div>
+    </div>
+    <div class="stat-block" id="s2">
+      <div class="stat-num">7+</div>
+      <div class="stat-desc">Tools mastered across analytics, BI, ML, and web presentation</div>
+      <div class="stat-bar"><div class="stat-bar-fill" data-w="75"></div></div>
+    </div>
+    <div class="stat-block" id="s3">
+      <div class="stat-num">∞</div>
+      <div class="stat-desc">Commitment to continuous learning and real-world impact</div>
+      <div class="stat-bar"><div class="stat-bar-fill" data-w="88"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-row">
+    <div class="marquee-track">
+      <span class="marquee-item">Python</span><span class="marquee-item">SQL</span><span class="marquee-item">Power BI</span><span class="marquee-item">Tableau</span><span class="marquee-item">Excel</span><span class="marquee-item">Machine Learning</span><span class="marquee-item">HTML &amp; CSS</span><span class="marquee-item">Data Cleaning</span>
+      <span class="marquee-item">Python</span><span class="marquee-item">SQL</span><span class="marquee-item">Power BI</span><span class="marquee-item">Tableau</span><span class="marquee-item">Excel</span><span class="marquee-item">Machine Learning</span><span class="marquee-item">HTML &amp; CSS</span><span class="marquee-item">Data Cleaning</span>
+    </div>
+  </div>
+  <div class="marquee-row">
+    <div class="marquee-track rev">
+      <span class="marquee-item">Data Collection</span><span class="marquee-item">Data Cleaning</span><span class="marquee-item">Data Augmentation</span><span class="marquee-item">Naive Bayes</span><span class="marquee-item">TF-IDF</span><span class="marquee-item">Transformer</span><span class="marquee-item">NLP</span><span class="marquee-item">BERT</span><span class="marquee-item">RAG</span>
+      <span class="marquee-item">Data Collection</span><span class="marquee-item">Data Cleaning</span><span class="marquee-item">Data Augmentation</span><span class="marquee-item">Naive Bayes</span><span class="marquee-item">TF-IDF</span><span class="marquee-item">Transformer</span><span class="marquee-item">NLP</span><span class="marquee-item">BERT</span><span class="marquee-item">RAG</span>
+    </div>
+  </div>
+</div>
+
+<!-- IMAGE SECTION -->
+<section class="image-section" id="image">
+  <p class="section-tag">Visual Profile</p>
+  <div class="image-showcase">
+    <div class="image-copy reveal-left">
+      <h2 class="about-headline">A <em>face</em> behind the dashboards.</h2>
+      <p class="about-para">I work with data to turn raw information into clear, meaningful insights. My skill set includes Python, SQL, Power BI, Tableau, and Excel, which I use to collect, clean, analyze, and visualize data effectively.
+
+I focus on understanding the problem before jumping into tools, ensuring that the analysis is relevant and aligned with real-world needs. From data extraction and cleaning to building dashboards and reports, I aim to deliver outputs that are simple, accurate, and useful for decision-making.
+
+I prefer clarity over complexity and prioritize data quality, structured thinking, and practical results in every project I work on.</p>
+      
+    </div>
+    <div class="image-stage reveal-right">
+      <div class="image-glow image-glow-a"></div>
+      <div class="image-glow image-glow-b"></div>
+      <div class="image-frame">
+        <img src="a-professional-headshot-photograph-of-a-_k0xc5_WkTPqDv2b6nkIFcg_ndH-G0jVS3quTlRp1eWMkg.jpeg" alt="Profile portrait">
+      </div>
+      <div class="image-badge">Data + Design</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-tag">About</p>
+  <div class="about-split">
+    <div class="reveal-left">
+      <h2 class="about-headline">Building <em>bridges</em> between data and understanding.</h2>
+      <p class="about-para">I specialise in transforming raw, complex datasets into clear narratives that support smarter business decisions. My work spans the entire analytics pipeline — from writing efficient queries and cleaning messy data, to designing dashboards that tell a compelling story at a glance.</p>
+      <p class="about-para">With a working knowledge of HTML and CSS, I can take data-driven projects end-to-end: from the database to a polished, user-friendly interface — no handoffs required.</p>
+      <p class="about-para">I'm continuously refining my skills, always looking for environments where analytical rigour translates directly into measurable impact.</p>
+    </div>
+    <div class="skill-bars reveal-right" id="skillBars">
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-label">Python</span><span class="skill-pct">90%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-label">SQL</span><span class="skill-pct">88%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="88"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-label">Power BI</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-label">Tableau</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-label">Excel</span><span class="skill-pct">92%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="92"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-label">Machine Learning</span><span class="skill-pct">78%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="78"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-label">HTML / CSS</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section" id="projects">
+  <p class="section-tag">Projects</p>
+  <h2 class="projects-headline reveal">Selected <em>work</em> &amp; case studies.</h2>
+  <div class="projects-grid">
+    <div class="project-card reveal"><p class="project-num">01 — Analysis</p><h3 class="project-title">Sales Performance Dashboard</h3><p class="project-desc">Built an interactive Power BI dashboard tracking KPIs across regions and product lines, enabling the sales team to identify underperforming segments at a glance.</p><div class="project-tags"><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">DAX</span></div></div>
+    <div class="project-card reveal"><p class="project-num">02 — Automation</p><h3 class="project-title">Automated Reporting Pipeline</h3><p class="project-desc">Designed a Python-based ETL pipeline that reduced manual monthly reporting from 8 hours to under 15 minutes, with scheduled delivery to stakeholders.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Excel</span></div></div>
+    <div class="project-card reveal"><p class="project-num">03 — Visualisation</p><h3 class="project-title">Customer Segmentation Analysis</h3><p class="project-desc">Queried and cleaned transactional data to segment customers by behaviour, then visualised findings in Tableau to inform targeted marketing campaigns.</p><div class="project-tags"><span class="tag">SQL</span><span class="tag">Tableau</span><span class="tag">Python</span><span class="tag">ML</span></div></div>
+    <div class="project-card reveal"><p class="project-num">04 — Web</p><h3 class="project-title">Data-Driven Web Report</h3><p class="project-desc">Translated a quarterly business analysis into a structured, interactive HTML report — making insights accessible to non-technical stakeholders without any BI tool.</p><div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></div>
+    <div class="project-card reveal"><p class="project-num">05 — NLP / Retrieval</p><h3 class="project-title">Semantic Document Retrieval System</h3><p class="project-desc">Developed a semantic document retrieval system that processes PDF files and enables query-based information extraction. Implemented document parsing using pdfplumber and pypdf, generated embeddings with sentence-transformers, and built a FAISS vector similarity search pipeline to retrieve relevant document sections. Designed an interactive Streamlit interface and incorporated Plotly visualizations (pie charts and bar graphs) to present insights from extracted data.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">pdfplumber</span><span class="tag">PyPDF</span><span class="tag">Sentence-Transformers</span><span class="tag">FAISS</span><span class="tag">Streamlit</span><span class="tag">Plotly</span></div><div class="project-actions"><a href="semantic-retrieval-monitor.html" class="btn-ghost project-open">Open Monitor Display</a><a href="https://github.com/ebenazer890/AI-Power-Knowledge-Interaction-System" class="btn-ghost project-open" target="_blank" rel="noopener noreferrer">Open in GitHub</a></div></div>
+    <div class="project-card reveal"><p class="project-num">06 — NLP / ML</p><h3 class="project-title">SMS Spam Detection using Machine Learning</h3><p class="project-desc">Built a text-classification pipeline to detect spam vs ham SMS messages and reduce message noise/fraud risk. Collected and preprocessed the dataset (stopword removal, lowercasing, tokenization), converted text with TF-IDF vectorization, trained a Naive Bayes classifier, and evaluated model performance using accuracy.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">TF-IDF</span><span class="tag">Naive Bayes</span><span class="tag">RAG</span></div><div class="project-actions"><a href="spam-detection-monitor.html" class="btn-ghost project-open">Open Monitor Display</a><a href="https://github.com/ebenazer890/sms-spam-detector/tree/main/sms_spam_detector" class="btn-ghost project-open" target="_blank" rel="noopener noreferrer">Open in GitHub</a></div></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <p class="section-tag">Process</p>
+  <h2 class="about-headline reveal" style="margin-top:1rem;margin-bottom:0;">How I work through every <em>data challenge.</em></h2>
+  <div class="process-steps">
+    <div class="process-step reveal"><div class="process-step-num">01</div><div class="process-step-title">Understand</div><div class="process-step-desc">Start with the business question — not the data. Clarify what decision needs to be made and what would count as a useful answer.</div></div>
+    <div class="process-step reveal"><div class="process-step-num">02</div><div class="process-step-title">Extract &amp; Clean</div><div class="process-step-desc">Query, collect, and rigorously clean the data. Bad inputs mean bad insights — this step is where reliability is built.</div></div>
+    <div class="process-step reveal"><div class="process-step-num">03</div><div class="process-step-title">Analyse &amp; Model</div><div class="process-step-desc">Explore patterns, build models, and surface the findings that matter — filtering out noise to highlight what drives the outcome.</div></div>
+    <div class="process-step reveal"><div class="process-step-num">04</div><div class="process-step-title">Communicate</div><div class="process-step-desc">Package insights into dashboards, reports, or presentations — designed for the audience, not the analyst.</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="reveal-left">
+    <h2 class="contact-headline">Let's build something<br><em>meaningful.</em></h2>
+    <p class="contact-sub">Open to roles, freelance projects, and collaborations where data can drive real improvement. Based in Chennai, India — available remotely.</p>
+  </div>
+  <div class="contact-links reveal-right">
+    <a href="mailto:hello@yourname.com" class="contact-link">
+      <span class="contact-link-label">Email</span>
+      <span class="contact-link-value">ebenazer890@gmail.com</span>
+      <span class="contact-link-arrow">→</span>
+    </a>
+    <a href="https://linkedin.com" class="contact-link" target="_blank">
+      <span class="contact-link-label">LinkedIn</span>
+      <span class="contact-link-value">www.linkedin.com/in/ebenazerk</span>
+      <span class="contact-link-arrow">→</span>
+    </a>
+    <a href="https://github.com" class="contact-link" target="_blank">
+      <span class="contact-link-label">GitHub</span>
+      <span class="contact-link-value">https://github.com/ebenazer890</span>
+      <span class="contact-link-arrow">→</span>
+    </a>
+    <a href="#" class="contact-link">
+      <span class="contact-link-label">Resume</span>
+      <span class="contact-link-value">Download CV (PDF)</span>
+      <span class="contact-link-arrow">↓</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-copy">© 2026 — Ebenazer.K Portfolio</p>
+  <div class="footer-dot"></div>
+  <p class="footer-copy">nagercoil, India</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
